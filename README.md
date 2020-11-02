@@ -12,6 +12,6 @@ python service_monitor.py service server [interval]
 ```
 * ```service``` - TCP or HTTP
 * ```server``` - server address and port number (e.g. ```localhost:12345```)
-* ```interval``` - *Optional* Check interval in seconds
+* ```interval``` - *Optional* check interval in seconds
 
 Runs and checks on the Magnificent service
