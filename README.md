@@ -1,25 +1,17 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2513
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+# Magnificent Service Monitor
+## Description
+Checks on the Magnificent service every once in a while, as indicated by the ```interval``` parameter. If the Magnificent has been unresponsive for 5 minutes, a notification will pop-up.
 
-\f0\fs24 \cf0 # Magnificent Service Monitor\
-## Description\
-Checks on the Magnificent service every once in a while, as indicated by the ```interval``` parameter. If the Magnificent has been unresponsive for 5 minutes, a notification will pop-up.\
-\
-## Requirements\
-* Linux or macOS systems only\
-\
-## Usage\
-### Command line syntax\
-```\
-python service_monitor.py service server [interval]\
-```\
-* ```service``` - TCP or HTTP\
-* ```server``` - server address and port number (e.g. ```localhost:12345```)\
-* ```interval``` - optional. Check interval in seconds\
-\
-Runs and checks on the Magnificent service\
-}
+## Requirements
+* Linux or macOS systems only
+
+## Usage
+### Command line syntax
+```
+python service_monitor.py service server [interval]
+```
+* ```service``` - TCP or HTTP
+* ```server``` - server address and port number (e.g. ```localhost:12345```)
+* ```interval``` - optional. Check interval in seconds
+
+Runs and checks on the Magnificent service
