@@ -1,6 +1,6 @@
 # Magnificent Service Monitor
 ## Description
-Checks on the Magnificent service every once in a while, as indicated by the ```interval``` parameter. If the Magnificent has been unresponsive for 5 minutes, a notification will pop-up.
+Checks on the Magnificent service every once in a while, as indicated by the ```interval``` parameter. If the Magnificent has been unresponsive for 5 minutes, a notification will pop-up. This is aside from the output log file ```server.log``` being updated by this application.
 
 ## Requirements
 * Linux or macOS systems only
