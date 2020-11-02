@@ -36,7 +36,7 @@ class Test_Application(object):
                     logfile.write(timestamp + ': Magnificent has not responded\n')
                     print('%s: Magnificent has not responded' % (timestamp))
                     fail_counter += 1
-                    five_minutes = int(60 / interval)
+                    five_minutes = int(300 / interval)
                     if fail_counter >= five_minutes:
                         os_platform = platform.system()
                         args = []
@@ -54,11 +54,10 @@ class Test_Application(object):
                             subprocess.call(args)
                         fail_counter = 0
 
-        	time.sleep(interval)
+        	    time.sleep(interval)
         except KeyboardInterrupt:
+            logfile.close()
             print('Application terminated!')
-
-        logfile.close()
 
     def tcp_test(self, server_info):
         separator = server_info.find(':')
